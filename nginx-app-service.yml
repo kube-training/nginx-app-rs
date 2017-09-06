@@ -3,6 +3,9 @@ kind: Deployment
 metadata:
   # Unique key of the Deployment instance
   name: nginx-app
+  labels:
+        # Apply this label to Deployment
+        app: nginx-app
 spec:
   # 3 Pods should exist at all times.
   replicas: 2
