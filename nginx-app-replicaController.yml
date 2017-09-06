@@ -2,7 +2,7 @@ apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
   # Unique key of the Deployment instance
-  name: nginx-app
+  name: nginx-app-rs
 spec:
   # 3 Pods should exist at all times.
   replicas: 2
@@ -11,12 +11,12 @@ spec:
       labels:
         # Apply this label to pods and default
         # the Deployment label selector to this value
-        app: nginx-app
+        app: nginx-app-rs
     spec:
       containers:
-      - name: nginx-app
+      - name: nginx-app-rs
         # Run this image
-        image: betsol/nginx-app:latest
+        image: betsol/nginx-app-rs:latest
         ports:
          - containerPort: 80
  
