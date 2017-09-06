@@ -7,7 +7,7 @@ metadata:
         # Apply this label to Deployment
         app: nginx-app-rs
 spec:
-  # 3 Pods should exist at all times.
+  # 2 Pods should exist at all times.
   replicas: 2
   template:
     metadata:
