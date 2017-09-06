@@ -1,10 +1,12 @@
 apiVersion: apps/v1beta1
-kind: Deployment
+kind: ReplicaSet
 metadata:
   # Unique key of the Deployment instance
   name: nginx-app-rs
+  labels:
+    app:  nginx-app-rs
 spec:
-  # 3 Pods should exist at all times.
+  # 2 Pods should exist at all times.
   replicas: 2
   template:
     metadata:
