@@ -7,7 +7,7 @@ metadata:
         # Apply this label to Deployment and default
         app: nginx-app-rs
 spec:
-  # 3 Pods should exist at all times.
+  # 2 Pods should exist at all times.
   replicas: 2
   template:
     metadata:
@@ -19,7 +19,7 @@ spec:
       containers:
       - name: nginx-app-rs
         # Run this image
-        image: betsol/nginx-app-rs:latest
+        image: betsol/nginx-app-rs:v1
         ports:
          - containerPort: 80
  
