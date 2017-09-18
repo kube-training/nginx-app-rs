@@ -6,8 +6,8 @@ metadata:
   labels:
     app:  nginx-app-rs
 spec:
-  # 2 Pods should exist at all times.
-  replicas: 2
+  # 3 Pods should exist at all times.
+  replicas: 3
   template:
     metadata:
       labels:
